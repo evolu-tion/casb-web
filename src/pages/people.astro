@@ -1,0 +1,79 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+// const allMembers = await Astro.glob("../pages/member/*.md");
+
+const metadata = {
+  title: 'Meet Our Research Team',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- <ul>
+    {allMembers.map((member) => <li><a href={member.url}>{member.frontmatter.name}</a></li>)}
+  </ul> -->
+
+  <Testimonials
+    title="Meet Our Research Team"
+    subtitle="Connecting Minds, Advancing Discoveries"
+    testimonials={[
+      {
+        name: 'Treenut Saithong, Assoc. Prof. Dr.',
+        job: 'Lecturer / Principal investigator',
+        image: {
+          src: '~/assets/images/people/treenut.png',
+          alt: 'Treenut Saithong',
+        },
+        testimonial: `Dr. Treenut Saithong is passionate about using systems biology and bioinformatics to unravel the secrets of plant metabolism. Her research focuses on building mathematical models to understand plant-microbe interactions, genotype-phenotype relationships, and more.`,
+        link: '#',
+        
+      },
+      {
+        name: 'Saowalak Kalapanulak, Asst. Prof. Dr.',
+        job: 'Lecturer / Principal investigator',
+        image: {
+          src: '~/assets/images/people/saowalak.png',
+          alt: 'Saowalak Kalapanulak',
+        },
+        testimonial: `Dr. Saowalak Kalapanulak unravels the mysteries of metabolism in both plants and pathogens using powerful tools from systems biology and bioinformatics. Her expertise lies in building intricate network models to understand how organisms function.`,
+        link: '#',
+      },
+      {
+        name: 'Jittrawan Thaiprasit, Ph.D',
+        job: 'Researcher',
+        image: {
+          src: '',
+          alt: 'Jittrawan Thaiprasit',
+        },
+        testimonial: `Plant whisperer and designer, Dr. Jittrawan Thaiprasit deciphers plant language using molecular biology and physiology, building new functionalities with synthetic RNA tools.`,
+      },
+      {
+        name: 'Porntip Chiewchankaset, Ph.D',
+        job: 'Researcher',
+        image: {
+          src: '',
+          alt: 'Porntip Chiewchankaset',
+        },
+        testimonial: `Dr. Porntip Chiewchankaset, specializes in genome-scaled metabolic models and plant physiology. Her research contributes to understanding the intricate metabolic processes in plants and their applications.`,
+      },
+      {
+        name: 'Thitiwan Jumpa, Ph.D',
+        job: 'Postdoctoral Researcher',
+        image: {
+          src: '',
+          alt: 'Thitiwan Jumpa',
+        },
+        testimonial: `Dr. Thitiwan Jumpa is a postdoctoral researcher specializing in plant physiology, plant stress response, and cassava storage root induction. Her work contributes to understanding the physiological and stress-related aspects of plants, with a focus on cassava root development.`,
+      },
+      {
+        name: 'Nattawet Sriwichai',
+        job: 'Research Assistant',
+        image: {
+          src: '~/assets/images/people/nattawet.jpg',
+          alt: 'Nattawet Sriwichai',
+        },
+        testimonial: `Nattawet Sriwichai serves as a research assistant, specializing in non-coding RNA and gene regulatory network reconstruction. His expertise also includes next-generation sequencing data analysis, microbiome analysis, and web application development. His diverse skills contribute to various aspects of genomic and bioinformatic research.`,
+      },
+    ]}
+  />
+</Layout>

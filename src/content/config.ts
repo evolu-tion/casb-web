@@ -63,6 +63,14 @@ const postCollection = defineCollection({
   }),
 });
 
+const memberCollection = defineCollection({
+  type: 'content',
+  schema: z.object({ 
+    name: z.string(),
+    image: z.string().optional(),
+   })
+});
+
 export const collections = {
-  post: postCollection,
+  'post': postCollection,
 };

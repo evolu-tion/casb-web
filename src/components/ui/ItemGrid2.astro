@@ -43,6 +43,7 @@ const {
           description,
           icon,
           callToAction,
+          link,
           classes: itemClasses = {},
         }) => (
           <div
@@ -52,6 +53,7 @@ const {
               itemClasses?.panel
             )}
           >
+          <a href={link}>
             {(icon || defaultIcon) && (
               <Icon
                 name={icon || defaultIcon}
@@ -86,6 +88,7 @@ const {
                 <Button {...callToAction} />
               </div>
             )}
+          </a>
           </div>
         )
       )}

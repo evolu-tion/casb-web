@@ -18,6 +18,7 @@ const {
   classes = {},
   bg = await Astro.slots.render('bg'),
 } = Astro.props as Testimonials;
+
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
@@ -26,41 +27,46 @@ const {
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {
       testimonials &&
-        testimonials.map(({ title, testimonial, name, job, image }) => (
-          <div class="flex h-auto">
-            <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600">
-              {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
-              {testimonial && (
-                <blockquote class="flex-auto">
-                  <p class="text-muted">" {testimonial} "</p>
-                </blockquote>
-              )}
-
-              <hr class="border-slate-200 dark:border-slate-600 my-4" />
-
-              <div class="flex items-center">
+        testimonials.map(({ title, testimonial, name, job, image, link }) => (
+          <div class="flex h-auto gap-4 mt-32">
+            
+            <div class="flex flex-col items-center p-5 md:p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-300">
+              <!-- <div class="relative flex shrink-0 overflow-hidden rounded-full h-48 w-48">  -->
+                <div class="absolute transform -translate-y-2/3 overflow-hidden rounded-full">
                 {image && (
-                  <div class="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-600">
+                  <div class="flex h-full w-full items-center justify-center rounded-full bg-muted ">
                     {typeof image === 'string' ? (
                       <Fragment set:html={image} />
                     ) : (
                       <Image
-                        class="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-600 min-w-full min-h-full"
-                        width={40}
-                        height={40}
-                        widths={[400, 768]}
+                        class="h-48 w-48 rounded-full border border-slate-200 dark:border-slate-600 min-w-full min-h-full"
+                        width={192}
+                        height={192}
+                        widths={[400, 400]}
                         layout="fixed"
                         {...(image as any)}
                       />
                     )}
                   </div>
                 )}
-
-                <div class="grow ml-3 rtl:ml-0 rtl:mr-3">
-                  {name && <p class="text-base font-semibold">{name}</p>}
-                  {job && <p class="text-xs text-muted">{job}</p>}
-                </div>
               </div>
+              <div class="grid gap-1 mt-24">
+                <h2 class="text-xl font-bold text-center">{name}</h2>
+                <h3 class="text-lg text-gray-500 dark:text-gray-400 text-center">{job}</h3>
+              </div>
+
+              <div class="grow mt-6">
+              {testimonial && (
+                <blockquote class="flex-auto">
+                  <p class="text-muted text-center">" {testimonial} "</p>
+                </blockquote>
+              )}
+            </div>
+
+            {link && (
+                  <a class="btn-secondary w-full sm:mb-0 mt-4" 
+                    href="{link}">More</a>
+                )}
             </div>
           </div>
         ))

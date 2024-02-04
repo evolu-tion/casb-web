@@ -1,69 +1,47 @@
 ---
-import Headline from '~/components/ui/Headline.astro';
-import ItemGrid from '~/components/ui/ItemGrid.astro';
-import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-import Image from '~/components/common/Image.astro';
-import type { Features } from '~/types';
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import Headline from "~/components/ui/Headline.astro";
+import ItemGrid2 from "~/components/ui/ItemGrid2.astro";
+import type { Features } from "~/types";
 
 const {
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
-  tagline = await Astro.slots.render('tagline'),
-  image,
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  tagline = await Astro.slots.render("tagline"),
   items = [],
-  columns,
+  columns = 2,
   defaultIcon,
-  isBeforeContent,
-  isAfterContent,
 
   id,
   isDark = false,
   classes = {},
-  bg = await Astro.slots.render('bg'),
+  bg = await Astro.slots.render("bg"),
 } = Astro.props as Features;
 ---
 
 <WidgetWrapper
   id={id}
   isDark={isDark}
-  containerClass={`${isBeforeContent ? 'md:pb-8 lg:pb-12' : ''} ${isAfterContent ? 'pt-0 md:pt-0 lg:pt-0' : ''} ${
-    classes?.container ?? ''
-  }`}
+  containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`}
   bg={bg}
 >
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline} />
-
-  <div aria-hidden="true" class="aspect-w-16 aspect-h-7">
-    {
-      image && (
-        <div class="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg">
-          {typeof image === 'string' ? (
-            <Fragment set:html={image} />
-          ) : (
-            <Image
-              class="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg"
-              width="auto"
-              height={320}
-              widths={[400, 768]}
-              layout="fullWidth"
-              {...(image as any)}
-            />
-          )}
-        </div>
-      )
-    }
-  </div>
-
-  <ItemGrid
+  <Headline
+    title={title}
+    subtitle={subtitle}
+    tagline={tagline}
+    classes={classes?.headline}
+  />
+  <ItemGrid2
     items={items}
     columns={columns}
     defaultIcon={defaultIcon}
     classes={{
-      container: 'mt-12',
-      panel: 'max-w-full sm:max-w-md',
-      title: 'text-lg font-semibold',
-      description: 'mt-0.5',
-      icon: 'flex-shrink-0 mt-1 text-primary w-6 h-6',
+      container: "gap-4 md:gap-6",
+      panel:
+            'rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.2)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6',
+      // panel:
+      //   "text-center bg-page items-center md:text-left rtl:md:text-right md:items-start p-6 p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-800",
+      icon: "w-12 h-12 mb-6 text-primary",
       ...((classes?.items as {}) ?? {}),
     }}
   />

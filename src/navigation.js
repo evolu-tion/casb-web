@@ -3,165 +3,154 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      text: 'Home',
+      href: getPermalink('/'),
     },
     {
-      text: 'Pages',
+      text: 'About',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
+          text: 'Research background and theme',
           href: getPermalink('/about'),
         },
         {
-          text: 'Contact',
-          href: getPermalink('/contact'),
+          text: 'Research interests',
+          href: getPermalink('/about#research-interests'),
         },
         {
-          text: 'Terms',
-          href: getPermalink('/terms'),
+          text: 'Current Projects',
+          href: getPermalink('/about#current-projects'),
         },
         {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+          text: 'Collaboration',
+          href: getPermalink('/about#collaboration'),
+        }
       ],
     },
     {
-      text: 'Landing',
+      text: 'Publications',
+      href: getPermalink('/publications'),
+    },
+    {
+      text: 'Databases and Tools',
       links: [
         {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
+          text: 'MePPI-In',
+          href: '/ppi',
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
+          text: 'MePPI-U',
+          href: '/ppi2',
         },
         {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
+          text: 'MeRecon',
+          href: '/MeRecon',
         },
         {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
+          text: 'ph-MeRecon',
+          href: '/ph-MeRecon',
         },
         {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
+          text: 'Me-miRNA',
+          href: '/miRNAs',
         },
         {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Me-lncRNAs',
+          href: '/Me-lncRNAs',
         },
+        {
+          text: 'MeTRN',
+          href: '/MeTRN',
+        },
+        {
+          text: 'Plant-DTI',
+          href: '/Plant-DTI',
+        }
       ],
     },
     {
-      text: 'Blog',
+      text: 'People',
+      href: getPermalink('/people'),
+    },
+    {
+      text: 'News',
       links: [
         {
-          text: 'Blog List',
+          text: 'News Update',
           href: getBlogPermalink(),
         },
         {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
+          text: 'Lab Activity',
+          href: getPermalink('activity', 'tag'),
         },
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Contact Us',
+      href: getPermalink('/contact'),
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Research Lab',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'About Us', href: getPermalink('/about') },
+        { text: 'Members', href: getPermalink('/people') },
+        { text: 'Contact Us', href: getPermalink('/contact') }
       ],
     },
     {
-      title: 'Platform',
+      title: 'Our Publish',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Publications', href: getPermalink('/publications') },
+        { text: 'Database & Tools', href: getPermalink('/database') }
       ],
     },
     {
-      title: 'Support',
+      title: 'Databases & Tools',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        {
+          text: 'MePPI-In',
+          href: '/ppi',
+        },
+        {
+          text: 'MePPI-U',
+          href: '/ppi2',
+        },
+        {
+          text: 'MeRecon',
+          href: '/MeRecon',
+        },
+        {
+          text: 'ph-MeRecon',
+          href: '/ph-MeRecon',
+        },
+        {
+          text: 'Me-miRNA',
+          href: '/miRNAs',
+        },
+        {
+          text: 'Me-lncRNAs',
+          href: '/Me-lncRNAs',
+        },
+        {
+          text: 'MeTRN',
+          href: '/MeTRN',
+        },
+        {
+          text: 'Plant-DTI',
+          href: '/Plant-DTI',
+        }
       ],
     },
     {
-      title: 'Company',
+      title: 'News & Activity',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Blog', href: getPermalink('/blog') }
       ],
     },
   ],
@@ -170,14 +159,12 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    // { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'http://facebook.com/casb.kmutt' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/KMUTT-BML' },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    &copy; 2024 Center for Agricultural Systems Biology, King Mongkut's University of Technology Thonburi · All rights reserved.
   `,
 };

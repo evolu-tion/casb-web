@@ -130,6 +130,7 @@ export interface Stat {
 export interface Item {
   title?: string;
   description?: string;
+  link: string;
   icon?: string;
   classes?: Record<string, string>;
   callToAction?: CallToAction;
@@ -154,6 +155,7 @@ export interface Testimonial {
   name?: string;
   job?: string;
   image?: string | unknown;
+  link?: string;
 }
 
 export interface Input {

@@ -1,6 +1,6 @@
 {
   "name": "casb-web",
-  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
+  "description": "CASB website is modified AstroWind template using Astro 4.0 and Tailwind CSS.",
   "version": "1.0.0-beta.17",
   "scripts": {
     "dev": "astro dev",

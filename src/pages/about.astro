@@ -1,228 +1,175 @@
 ---
-import Features2 from '~/components/widgets/Features2.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Content from '~/components/widgets/Content.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'About Us',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
-  <Hero
-    tagline="About us"
+  <Hero2
+    tagline="Perspective"
+    title="Research background and theme"
+    subtitle="Food security and green energy are becoming a popular research, because the world starts to concern about the unbalance of the dramatically increased human population and the current capacity of the natural resources. Cassava, which is a decade ago recognized as a cheap staple crop served as food for developing countries, is at the moment known as a crop of hope in both food and energy aspects. A niche of cassava underlying its significance lies on the capability to produce and accumulate huge amount of starch in the underground roots with respect to the other crops. Despite a high starch-content crop, the research on cassava mostly aims at an improvement of the yield of starch in storage roots. For Thailand, cassava is one of the most important crops. Cassava is mainly exported in forms of starch whose value is relatively low with respect to the other kinds of plant starch for example rice starch. In the regime of yield and properties of crop improvement, at the first stage, the researchers have put enormous afford on the growth condition and physiological studies to establish the optimal culture environment. Later, it has been believed that yield of starch relies very much on the genetics, so that breeding technique was introduced and played an important role in finding the better cassava strains. In 2009, the release of cassava genome moved the cassava research a step forward. <br />Here, to complement the regime of crop improvement, BML aims to utilize the fruitful data along with our experimental data to unwind the biological complexity underlying the phenotype of the living organism. Our laboratory investigates the regulation controlling the starch biosynthesis at all biological level from genomic data, and subsequently used it for kinetic modeling to study the dynamic regulation underlying the starch production process, including transcription, post-transcription, protein and metabolism, based on the network atlas (or pathway) of both individual level of regulation and the integral one."
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: '~/assets/images/crop-revolution.png',
+      alt: 'xxx',
     }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="research-interests"
+    title="Research interests"
+    subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
+    isReversed
+    items={[
+      {
+        title: 'Comparative analysis of genomic sequence:',
+        description:
+          `- <strong>Reconstruction of the biological network for multi-level regulation of a cell</strong>: Gene regulatory network, post-transcriptional regulation network, metabolic network, and protein-protein interaction network <br /><strong>- Crop plant modeling</strong>: Plant cell development, phyto-product biosynthesis (especially starch biosynthesis in cassava), plant stress responses</li></ul>`,
+      },
+      {
+        title: 'Plant-pathogen interaction modeling',
+      },
+      {
+        title: 'Theoretical biological modeling',
+        description: `Toy model simulation`,
+      },
+      {
+        title: 'Omics data analysis and integration',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/multi-levels-plant-systems-regulation.png',
+      alt: 'Startup Image',
+    }}
+  />
+  <!-- Features2 Widget ************** -->
+
+  <Features3
+    id="current-projects"
+    title="Current Projects"
+    subtitle="Provides resource for research communities"
+    tagline="Our contributes"
+    items={[
+      {
+        title: 'Reconstruction of starch biosynthesis pathway in cassava',
+        description:
+          'Reconstruction of metabolic pathway of starch biosynthesis which is of important for understanding the metabolic regulation is an initial step towards more comprehensive study on such a process. Here, we employ comparative genomic approach to build the metabolic network of cassava from available genome data of plant templates, including Arabidopsis thaliana, Castor Bean (Ricinus communis), Maize (Zea may), Potato (Solanum tuberosum), and Rice (Oryza sativa).',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Genome-scale model of carbon metabolism in cassava',
+        description:
+          'Starch yield is related to yields of the other products (such as lipid, protein, and cellulose). To increase yield of starch, carbon flux partitioning in cell is key information. Genome-scale modeling of carbon metabolism in cassava will be developed to monitor the flux distribution underlying the cassava biomass.',
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Towards cellular regulatory network of cassava starch biosynthesis ',
+        description:
+          'To gain more understanding about how a cellular process is regulated to express the cellular phenotype, a function of gene in a particular condition or plant tissues is always examined. However, the regulation of gene function in the metabolism and phenotypic responses is gone beyond the transcription regulation. The dynamic regulations as well as post-transcription, and post-translation are required to understand the cellular regulation relevant to cellular product biosynthesis. The cellular regulatory networks of interest include transcriptional regulatory network (TRN), post-transcriptional network (noncoding RNA network), and post-translational network (protein-protein interaction, PPI).',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Metabolic network relationship between cassava and its pathogen – plant-microbe interaction',
+        description:
+          'One of the most important problems for increasing the production rate of cassava is the way to protect cassava from its pathogen such as cassava brown streak virus (CBSV), cassava mosaic virus. The investigation of the metabolic network relationship between cassava and the pest will gain a better understanding for drug development against pathogenic diseases in cassava.',
+        icon: 'flat-color-icons:document',
+      },
+    ]}
   >
-    <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
+  </Features3>
 
-    <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+  <!-- Collaborative  ************** -->
+  <Features3
+    id="collaboration"
+    title="Domestic research partners"
+    subtitle="CASB works closely with researchers from diverse fields in many research alliances, which are comprised of domestic and international research partners."
+    tagline="Collaboration"
+    items={[
+      {
+        title: 'BIOTEC, NSTDA',
+        description: 'Thailand',
+        link: 'https://www.biotec.or.th/',
+      },
+      {
+        title: 'Mahidol University',
+        description: 'Thailand',
+        link: 'https://mahidol.ac.th/',
+      },
+      {
+        title: 'Khon Kaen University',
+        description: 'Thailand',
+        link: 'https://www.kku.ac.th/',
+      },
+      {
+        title: 'Department of Agriculture',
+        description: 'Thailand',
+        link: 'https://www.doa.go.th/en/',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Hero>
+  </Features3>
 
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    title="Statistics about us"
-    stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
-    ]}
-  />
-
-  <!-- Features3 Widget ************** -->
-
+  <!-- Collaborative  ************** -->
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
-    columns={3}
-    isBeforeContent={true}
+    title="International research partners"
     items={[
       {
-        title: 'Educational',
-        description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+        title: 'RIKEN',
+        description: 'Japan',
+        link: 'https://www.riken.jp/en/',
       },
       {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+        title: 'Forschungszentrum Jülich',
+        description: 'Germany',
+        link: 'https://www.fz-juelich.de/en/',
       },
       {
-        title: 'Photography',
-        description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+        title: 'Okinawa Institute of Science and Technology',
+        description: 'Japan',
+        link: 'https://www.oist.jp',
       },
     ]}
-  />
-
-  <!-- Features3 Widget ************** -->
-
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
+  <!-- Collaborative  ************** -->
   <Features3
-    columns={3}
-    isAfterContent={true}
+    title="Funding"
     items={[
       {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+        title: 'NSTDA',
       },
       {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+        title: 'BIOTEC',
       },
       {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
+        title: 'National Research Council of Thailand (NRCT)',
       },
       {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
+        title: 'Thailand Science Research and Innovation (TSRI)',
       },
       {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+        title: "King Mongkut's University of Technology Thonburi",
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
-    }}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
-    items={[
-      {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-      },
-      {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
-    isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
-    }}
-    items={[
-      {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
-      },
-      {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
-      },
-      {
-        title: 'Awards and recognition as industry experts',
-        description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
-    items={[
-      {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
-      },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
-      },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
-    columns={2}
-    items={[
-      {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
-      },
-      {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
-      },
-    ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
 </Layout>
