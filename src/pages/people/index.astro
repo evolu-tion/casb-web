@@ -2,6 +2,8 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 // const allMembers = await Astro.glob("../pages/member/*.md");
+import { getPermalink } from '~/utils/permalinks';
+
 
 const metadata = {
   title: 'Meet Our Research Team',
@@ -9,9 +11,6 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- <ul>
-    {allMembers.map((member) => <li><a href={member.url}>{member.frontmatter.name}</a></li>)}
-  </ul> -->
 
   <Testimonials
     title="Meet Our Research Team"
@@ -25,7 +24,7 @@ const metadata = {
           alt: 'Treenut Saithong',
         },
         testimonial: `Dr. Treenut Saithong is passionate about using systems biology and bioinformatics to unravel the secrets of plant metabolism. Her research focuses on building mathematical models to understand plant-microbe interactions, genotype-phenotype relationships, and more.`,
-        link: '#',
+        link: getPermalink('/people/treenut-saithong'),
         
       },
       {
@@ -36,7 +35,7 @@ const metadata = {
           alt: 'Saowalak Kalapanulak',
         },
         testimonial: `Dr. Saowalak Kalapanulak unravels the mysteries of metabolism in both plants and pathogens using powerful tools from systems biology and bioinformatics. Her expertise lies in building intricate network models to understand how organisms function.`,
-        link: '#',
+        link: getPermalink('/people/saowalak-kalapanulak'),
       },
       {
         name: 'Jittrawan Thaiprasit, Ph.D',
@@ -73,6 +72,7 @@ const metadata = {
           alt: 'Nattawet Sriwichai',
         },
         testimonial: `Nattawet Sriwichai serves as a research assistant, specializing in non-coding RNA and gene regulatory network reconstruction. His expertise also includes next-generation sequencing data analysis, microbiome analysis, and web application development. His diverse skills contribute to various aspects of genomic and bioinformatic research.`,
+        link: getPermalink('/people/nattawet-sriwichai'),
       },
       {
         name: 'Nattavat Sukko',

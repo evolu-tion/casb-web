@@ -5,14 +5,12 @@ import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
 import type { Testimonials } from '~/types';
 
-
 const {
   title = '',
   subtitle = '',
   tagline = '',
   testimonials = [],
   callToAction,
-
   id,
   isDark = false,
   classes = {},
@@ -65,7 +63,7 @@ const {
 
             {link && (
                   <a class="btn-secondary w-full sm:mb-0 mt-4" 
-                    href="{link}">More</a>
+                    href={link}>More</a>
                 )}
             </div>
           </div>

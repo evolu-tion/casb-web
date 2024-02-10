@@ -1,0 +1,54 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import type { MetaData } from '~/types';
+
+export interface Props {
+  frontmatter: {
+    name?: string;
+    image?: string;
+    introduction?: string;
+    position?: string;
+    email?: string;
+    research_field?: string;
+    education: any;
+  };
+}
+
+const { frontmatter } = Astro.props;
+
+const metadata: MetaData = {
+  title: frontmatter?.name,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+  <Hero id="hero" title={frontmatter.name} tagline="Staff">
+    <Fragment slot="subtitle">
+      {frontmatter.introduction}
+    </Fragment>
+  </Hero>
+
+  <!-- Education Widget ****************** -->
+  {
+    frontmatter.education && frontmatter.education.length && (
+      <Steps id="education" title="Education" items={frontmatter.education} classes={{ container: 'max-w-3xl' }} />
+    )
+  }
+
+  <!-- Activity Widget ****************** -->
+  {
+    frontmatter.profAct && frontmatter.profAct.length && (
+      <Steps
+        id="acitivity"
+        title="Professional Activity"
+        items={frontmatter.profAct}
+        classes={{ container: 'max-w-3xl' }}
+      />
+    )
+  }
+
+  <slot />
+</Layout>

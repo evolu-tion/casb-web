@@ -129,7 +129,9 @@ export interface Stat {
 
 export interface Item {
   title?: string;
+  location?: string;
   description?: string;
+  year?: string;
   link: string;
   icon?: string;
   classes?: Record<string, string>;
