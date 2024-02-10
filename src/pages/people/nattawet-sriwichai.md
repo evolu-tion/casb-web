@@ -11,11 +11,11 @@ research_field:
   - Microbiome analysis
   - Web application development
 education: 
-  - title: M Sc. in Bioinformatics and Systems Biology
+  - title: M.Sc. in Bioinformatics and Systems Biology
     location: King Mongkut's University of Technology Thonburi
     date: 2017
     icon: 'tabler:school'
-  - title: Microbiology
+  - title: B.Sc. in Microbiology
     location: Chiang Mai Univerisity
     date: 2013
     icon: 'tabler:school'
