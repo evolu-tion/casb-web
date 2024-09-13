@@ -2,6 +2,12 @@
 publishDate: 2020-11-16T00:00:00Z
 title: Publication
 ---
+## 2024
+
+- Sriwichai N, Sangcharoen R, Saithong T, Simpson D, Goryanin I, Boonapatcharoen N, Kalapanulak S, Panichnumsin P (2024) Optimization of microbial fuel cell performance application to high sulfide industrial wastewater treatment by modulating microbial function, PLoS One. 19(6): e0305673.
+- Punyasu N, Thaiprasit J, Kalapanulak S, Saithong T, Postma JA (2024) Modeling cassava root system architecture and the underlying dynamics in shoot–root carbon allocation during the early storage root bulking stage, Plant and Soil. 1-18.
+
+
 
 ## 2023
 
