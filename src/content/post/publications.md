@@ -4,8 +4,11 @@ title: Publication
 ---
 ## 2024
 
+- Nguyen NX, Saithong T, Boonyaritthongchai P, Buanong M, Kalapanulak S, Wongs-Aree C (2024) Methyl salicylate induces endogenous jasmonic acid and salicylic acid in’Nam Dok Mai’mango to maintain postharvest ripening and quality, Journal of Plant Physiology. 303: 154356.
+- Srinak N, Chiewchankaset P, Kalapanulak S, Panichnumsin P, Saithong T (2024) Metabolic cross-feeding interactions modulate the dynamic community structure in microbial fuel cell under variable organic loading wastewaters, PLOS Computational Biology. 20(10): e1012533.
 - Sriwichai N, Sangcharoen R, Saithong T, Simpson D, Goryanin I, Boonapatcharoen N, Kalapanulak S, Panichnumsin P (2024) Optimization of microbial fuel cell performance application to high sulfide industrial wastewater treatment by modulating microbial function, PLoS One. 19(6): e0305673.
 - Punyasu N, Thaiprasit J, Kalapanulak S, Saithong T, Postma JA (2024) Modeling cassava root system architecture and the underlying dynamics in shoot–root carbon allocation during the early storage root bulking stage, Plant and Soil. 1-18.
+- Soommat P, Raethong N, Ruengsang R, Thananusak R, Laomettachit T, Laoteng K, Saithong T, Vongsangnak W (2024) Light-exposed metabolic responses of Cordyceps militaris through transcriptome-integrated genome-scale modeling, Biology. 13(3): 139.
 
 
 
@@ -15,7 +18,8 @@ title: Publication
 - Thaiprasit J, Chiewchankaset P, Kalapanulak S, Saithong T (2023) Cluster-based photography and modeling integrated method for an efficient measurement of cassava leaf area. PLOS ONE 18(10): e0287293.
 - Sukko N, Kalapanulak S, Saithong T (2023) Screening for plant regulators modulating the early disease-state transition of cassava brown streak disease (CBSV) using dynamic network biomarker (DNB). The 26th International Annual Symposium on Computational Science and Engineering (ANSCSE26), 20-22 July 2023, The A-ONE Royal Cruise Hotel, Pattaya, Thailand. [*Oral*]
 - Kalapanulak S, Suksamran R, Saithong T (2023) Transcriptome study inferring different metabolisms in developing storage roots of low- and high-cyanide containing cassava varieties. The 26th International Annual Symposium on Computational Science and Engineering (ANSCSE26), 20-22 July 2023, The A-ONE Royal Cruise Hotel, Pattaya, Thailand. [*Poster*]
-- Punyasu N, Kalapanulak S, Saithong T (2023) CO recycling by phosphoenolpyruvate carboxylase enables cassava leaf metabolism to tolerate low water availability, Front. Plant Sci. 14: 1159247.
+- Punyasu N, Kalapanulak S, Saithong T (2023) CO2 recycling by phosphoenolpyruvate carboxylase enables cassava leaf metabolism to tolerate low water availability, Front. Plant Sci. 14: 1159247.
+- Permana BH, Krobthong S, Yingchutrakul Y, Saithong T, Thiravetyan P, Treesubsuntorn C (2023) Evidence of brassinosteroid signalling and alternate carbon metabolism pathway in the particulate matter and volatile organic compound stress response of Sansevieria trifasciata, Environmental and Experimental Botany. 205: 105116.
     
     
 
@@ -33,11 +37,15 @@ title: Publication
 - Sutthacharoenthad W, Punyasu N, Kalapanulak S, Chiewchankaset P, Ruengsang R, Saithong T (2022) Modeling Carbon Metabolism for Leaves Growth Based on The Characterized Photon Uptake Scenario of Cassava, Thai Society for Biotechnology International Conference Online, 29 April 2022, Bangkok, Thailand. [*Proceeding*]
 - Chiewchankaset P, Thaiprasit J, Kalapanulak S, Wojciechowski T, Boonjing P, Saithong T (2022) Effective Metabolic Carbon Utilization and Shoot-to-Root Partitioning Modulate Distinctive Yield in High Yielding Cassava Variety, Front. Plant Sci. 13: 832304.
 
+
+
 ## 2021
 
 - Kamsen R, Kalapanulak S, Chiewchankaset P, Saithong T (2021) Transcriptome integrated metabolic modeling of carbon assimilation underlying storage root development in cassava, Scientific Reports, 11(1): 8758.
 - Jaemthaworn T, Kalapanulak S, Saithong T (2021) Topological clustering of regulatory genes confers pathogenic tolerance to cassava brown streak virus (CBSV) in cassava, Scientific Reports, 11(1): 7872.
 - Dechpichai P, Puengpien F, Sittipoonprachaya S, Salikupata C, Saithong T, Kalapanulak S (2021) Clustering and Exploring of Gene Functional Modules from Cassava Root Gene Expression Data, KMUTT Research and Development Journal, 44(3): 485-499.
+
+
 
 ## 2020
 
@@ -49,6 +57,8 @@ title: Publication
 - Suksamran R, Thammarongtham C, Saithong T, Kalapanulak S (2020) Genome-wide investigation of lincRNAs in cassava and their potential roles in specific tissue, The 5th RSU International Research Conference (RSUSSH2020), 1 May 2020 , Pathum Thani, Thailand. [*Proceeding*]
 - Suksamran R, Saithong T, Thammarongtham C, Kalapanulak S (2020) Genomic and transcriptomic analysis identified novel putative cassava lncRNAs involved in cold and drought stress, Genes, 11(4): 366.
 - Thanasomboon R, Kalapanulak S, Netrphan S, Saithong T (2020) Exploring dynamic protein-protein interactions in cassava through the integrative interactome network, Scientific Reports, 10(1): 6510.
+
+
 
 ## 2019
 
@@ -70,6 +80,8 @@ title: Publication
 - Wirojsirasak W, Kalapanulak S, Saithong T (2019) Pan- and core- gene association networks: Integrative approaches to understanding biological regulation, PLoS ONE 14(1): e0210481.
 - Chiewchankaset P, Siriwat W, Suksangpanomrung M, Boonseng O, Meechai A, Tanticharoen M, Kalapanulak S, Saithong T (2019) Understanding carbon utilization routes between high and low starch-producing cultivars of cassava through Flux Balance Analysis, Scientific Reports 9: 2964.
 
+
+
 # 2018
 
 - Jaemthaworn T, Ruengsrichaiya B, Saithong T, Kalapanulak S (2018) Clustered Network Topology of Regulatory System Strengthens the Cellular Robustness to Stress: A Case Study in a Resistant Cultivar of Cassava (Manihot esculenta Crantz) to Viral Infection, The 9th International Conference on Computational Systems-Biology and Bioinformatics (CSBio 2018), 11-13 December 2018, KMUTT Knowledge Exchange for Innovation Center (KX), Bangkok, Thailand.
@@ -78,6 +90,8 @@ title: Publication
 - Kalapanulak S, Sriwichai N, Saithong T, Suksangpanomrung M, Netrpan S (2018) Unraveling transcriptional regulation of starch metabolic genes in cassava through computational prediction with Yeast-one hybrid validation, The 19th International Conference on Systems Biology (ICSB), 28 October – 1 November 2018, Lyon, France. [*Poster*]
 - Chiewchankaset P, Siriwat W, Kalapanulak S, Saithong T (2018) Genome-scale metabolic model predicts carbon flux partitioning towards starch biosynthesis in storage root of cassava, The 11th International Multiconference on Bioinformatics of Genome Regulation and Structure\Systems Biology (BGRS\SB- 2018), 20-25 August 2018, Novosibrisk, Russia. [*Poster*]
 - Kalapanulak S, Rangsiwutisak C, Saithong T (2018) Genome-wide prediction of transcription factor binding sites in cassava via phylogenetic footprinting between plants in Euphorbiaceae family, The 11th International Multiconference on Bioinformatics of Genome Regulation and Structure\Systems Biology (BGRS\SB-2018), 20-25 August 2018, Novosibrisk, Russia. [*Poster*]
+
+
 
 # 2017
 
@@ -88,6 +102,8 @@ title: Publication
 - Chiewchankaset P, Dusschoten D, Saithong T, Kalapanulak S, Wojchiechowski T (2017) Development of fine roots of cassava in soil as observed by 3D MRI, International Conference on Sustainable Agriculture and Bioeconomy 2017 (AGBIO2017), 22 February - 2 March 2017, Bangkok, Thailand. [*Poster*]
 - Chungloo D, Suksangpanomrung M, Netrphan S, Saithong T, Kalapanulak S (2017) A study towards understanding of transcriptional regulation of ADP-glucose pyrophosphorylase genes in cassava through bioinformatics and molecular biology techniques, International Conference on Sustainable Agriculture and Bioeconomy 2017 (AGBIO2017), 22 February - 2 March 2017, Bangkok, Thailand. [*Poster*]
 
+
+
 # 2016
 
 - Punyasu N, Kalapanulak S, Bumee S, Saithong T (2016) Unravelling the changes in metabolism during storage root development of cassava through reporter metabolite analysis, The 28th Annual Meeting of the Thai Society for Biotechnology and International Conference (TSB), 28-30 November 2016, Chiangmai, Thailand. [*Poster*]
@@ -97,6 +113,8 @@ title: Publication
 - Bumee S, Khampoosa B, Saithong T, Meechai A, Kalapanulak S (2016) Integrative approach for predicting transcription factors controlling starch genes in cassava, The First World Congress on Root and Tuber Crops (WCRTC), 18-23 January 2016, Nanning, China. [*Poster*]
 - Kalapanulak S, Saithong T, Thammarongtham C (2016) Networking Omic Data to Envisage Systems Biological Regulation. In: Nookaew I. (eds) Network Biology. Advances in Biochemical Engineering/Biotechnology, vol 160. Springer, Cham [*Book Chapter*]
 
+
+
 # 2015
 
 - Bumee S, Kalapanulak S, Meechai A, Saithong T (2015) Analysis of reporter metabolites for the compartmentalized genome-scale metabolic model of Arabidopsis leaves, The 6th international conference on Computational Systems-Biology and Bioinformatics 2015 (CSBio), 22-25 November 2015, Bangkok, Thailand. [*Proceedings*]
@@ -105,6 +123,8 @@ title: Publication
 - Sojikul P, Saithong T, Kalapanulak S, Pisuttinusart N, Limsirichaikul S, Tanaka M, Utsumi Y, Sakurai T, Seki M, Narangajavana J (2015) Genome-wide analysis reveals phytohormone action during cassava storage root initiation, Plant Molecular Biology, 88(6): 531-543.
 - Saithong T Kalapanulak S (2015) Going beyond the current native nutritional food through the integration of the omic data in the post-genomic era: A Study in (Resistant) Starch Systems Biology, Genomics, Proteomics and Metabolomics in Nutraceuticals and Functional Foods 2nd, John Wiley & Sons, Ltd. [*Book Chapter*]
 - Saithong T, Saerue S, Kalapanulak S, Sojikul P, Narangajavana J, Bhumiratana S (2015) Gene co-expression analysis inferring the crosstalk of ethylene and gibberellin in modulating the transcriptional acclimation of cassava root growth in different seasons, PLoS ONE, 10(9): e0137602.
+
+
 
 # 2014
 
@@ -116,25 +136,28 @@ title: Publication
 - Yawichai A, Suksamran R, Kalapanulak S, Saithong T, Thammarongtham C (2014) Computational Screening for Intronic microRNAs in Cassava (*Manihot esculenta* Crantz) Genome, Next Generation Sequencing for Genetic and Genomic Studies (NGS2014), 29-30 July 2014, Bangkok, Thailand. [*Poster*]
 - Wirojsirasak W, Saithong T, Kalapanulak S (2014) Discovering the prominent processes during cassava root development through gene expression profile analysis, Genome, Next Generation Sequencing for Genetic and Genomic Studies (NGS2014), 29-30 July 2014, Bangkok, Thailand. [*Poster*]
 
+
+
 # 2013
 
 - Saithong T, Rongsirikul O, Kalapanulak S, Chiewchankaset P, Siriwat W, Netrphan S, Suksangpanomrung M, Meechai A, Cheevadhanarak S (2013) Starch biosynthesis in cassava: a genome-based pathway reconstruction and its exploitation in data integration, BMC Systems Biology, 7(1): 75.
 - Bumee S, Ingkasuwan P, Kalapanulak S, Meechai A, Cheevadhanarak S, Saithong T (2013) Transcriptional regulatory network of Arabidopsis starch metabolism under extensive light conditions: A potential model of transcription-modulated starch metabolism in roots of starchy crops, The 4th international conference on Computational Systems-Biology and Bioinformatics (CSBio), 7-9 November 2013, Seoul, Korea. [*Proceedings*]
 - Khampoosa B, Kalapanulak S, Saithong T, Suksangpanomrung M (2013) Performing bioinformatics study discloses bZip transcription factor family protein controlling starch metabolism in cassava, Plant Genome Evolution 2013 (PGEV2013), 8-10 September 2013, Amsterdam, Netherlands. [*Poster*]
 
+
+
 # 2012
 
 - Saithong T, Bumee S, Liamwirat C, Meechai A (2012) Analysis and practical guideline of constraint-based Boolean method in genetic network inference, PLoS ONE, 7(1): e30232.
 - Saithong T, Meechai A, Chevathanarak S, and Bhumirattana S (2012) A formal path inference of starch biosynthesis via mathematical modelling of metabolic changes in excess CO, Journal of Computer Science and Systems Biology, 5: 024-038.
-    
-    2
-    
 - Ingkasuwan P, Netrphan S, Prasitwattanaseree S, Tanticharoen M, Bhumiratana S, Meechai A, Chaijaruwanich J, Takahashi H, Cheevadhanarak S (2012) Inferring transcriptional gene regulation network of starch metabolism in *Arabidopsis thaliana*leaves using graphical Gaussian model, BMC Systems Biology, 6(1): 100-121.
 - Chiewchankaset P, Srimarut Y, Klanchui A, Kurdi P, Plengvidhya V, Meechai (2012) Systematic identification of *Lactobacillus plantarum*auxotrophs for fermented Nham using genome-scale metabolic model, Journal of Biotechnology, 162(2-3): 327-335.
 - Siriwat W, Kalapanulak S, Suksangpanomrung M, Netrphan S, Meechai, Saithong T (2012) Transcriptomic data integration inferring the dominance of starch biosynthesis in carbon utilization of developing cassava roots, The 3rdInternational Conference on Computational Systems-Biology and Bioinformatics (CSBio), 3-5 October 2012, Bangkok, Thailand. [*Proceedings*]
 - Bumee S, Ingkasuwan P, Kalapanulak S, Meechai A, Cheevadhanarak S, Saithong T (2012) Transcriptional regulatory network inference of starch metabolism in root from Arabidopsis gene expression data, The 11th International Conference on Bioinformatics (InCoB2012), 3-5 October 2012, Bangkok, Thailand. [*Proceedings*]
 - Saithong T, Rongsirikula O, Kalapanulaka S, Netrphan S, Suksangpanomrung M (2012) High-quality pathway of cassava starch biosynthesis in non-photosynthetic tissues inferred by multiple plant templates, The 23rdAnnual Meeting of the Thai Society for Biotechnology “Systems Biotechnology: Quality & Success” (TSB), 1-2 February 2012, Bangkok, Thailand. [*Proceedings*]
 - Saithong T, Saerue S, Kalapanulak S, Sojikul P, Narangajavana J (2012) Analysis of gene expression during root development implies the distinct gene regulation between root tissues, The 23rdAnnual Meeting of the Thai Society for Biotechnology “Systems Biotechnology: Quality & Success” (TSB), 1-2 February 2012, Bangkok, Thailand. [*Proceedings*]
+
+
 
 # 2010
 
@@ -143,6 +166,8 @@ title: Publication
 - Bumee S, Liamwirat C, Saithong T, Meechai A (2010) Extended constraint-based Boolean analysis: A computational method in genetic network inference, The 1st International Conference on Computational Systems-Biology and Bioinformatics (CSBio), 3-5 November 2010, Bangkok, Thailand. [*Proceedings*]
 - Rongsirikul O, Saithong T, Kalapanulak S, Meechai A, Cheevadhanarak S, Netrphan S, Suksangpanomrung M (2010) Reconstruction of starch biosynthesis pathway in cassava using comparative genomic approach, The 1st International Conference on Computational Systems-Biology and Bioinformatics (CSBio), 3-5 November 2010, Bangkok, Thailand. [*Proceedings*]
 
+
+
 # 2009
 
 - Bumee S, Liamwirat C, Meechai A (2009) Comprehensive bioinformatics platform for Thailand plant research, The 21th of the Annual Meeting and International Conference of Thai Society for Biotechnology (TSB), 24-25 September 2009, Bangkok, Thailand. [*Proceedings*]
@@ -150,15 +175,21 @@ title: Publication
 - Liamwirat C, Meechai A, Cheevadhanarak S, Chaijaruwanich J, Netrphan S, Bhumiratana S (2009) Analysis of simulated metabolite profiling of starch producing cultivars: A rational way to increase yield of energy crop, The 4th Cycle Celebration of KMUTT Sustainable Development to Save the Earth: Technologies and Strategies Vision 2050 (SDSE), 7-9 April 2009, Thailand. [*Proceedings*]
 - Munkong W, Liamwirat C, Bumee S, Meechai A (2009) A constraint-based Boolean approach to inferring genetic circuits, The 13th International Annual Symposium on Computational Science and Engineering (ANSCSE 13), 25-27 March 2009, Bangkok, Thailand. [*Proceedings*]
 
+
+
 # 2007
 
 - Liamwirat C, Meechai A, Cheevadhanarak S, Chaijaruwanich J, Netrphan S, Bhumiratana S (2007) Modeling of starch biosynthesis in tuber plants: A sensitivity of enzymatic activities to starch production, The 6th Asian Crop Science Association Conference, 7-9 November 2007, Bangkok, Thailand. [*Poster*]
 - Ingkasuwan P, Cheevadhanarak S, Netrphan S, Meechai A, Prasitwattanaseree S, Chaijaruwanich J, Tanticharoen M, Bhumiratana S (2007) Discovery of starch gene network characteristics in *Arabidopsis thaliana*, The 6th Asian Crop Science Association Conference, 7-9 November 2007, Bangkok, Thailand. [*Poster*]
 - Ingkasuwan P, Meganck S, Cheevadhanarak S, Netrphan S, Meechai A, Prasitwattanaseree S, Chaijaruwanich J, Tanticharoen M, Bhumiratana S (2007) Inferring genes regulation network of starch metabolism of *Arabidopsis thaliana*using graphical Gaussian model, The 2nd FEBS Advanced Lecture Course on Systems Biology: From Molecules to Life, 10-16 March 2007, Gosau, Austria. [*Poster*]
 
+
+
 # 2006
 
 - Liamwirat C, Meechai A, Cheevadhanarak S, Chaijaruwanich J, Bhumiratana S (2006) *In silico*model of starch metabolism in leaves, The 18th Annual Meeting of the Thai Society of Biotechnology “Biotechnology: Benefits & Bioethics” (TSB), 2-3 November 2006, Bangkok, Thailand. [*Poster*]
+
+
 
 # 2005
 
@@ -166,6 +197,8 @@ title: Publication
 - Meechai A, Saithong T, Saraboon P, Cheevadhanarak S, Bhumiratana S (2005) Numerical simulation of plant starch biosynthesis, The 3rdConference on Starch Technology, 4-5 November 2005, Bangkok, Thailand. [*Proceedings*]
 - Saithong T, Saraboon P, Meechai A, Cheevadhanarak S, Bhumiratana S (2005) A structured and multi-cellular model of starch biosynthesis in potato, The 2005 International Joint Conference of InCoB, AASBi and KSBI (Bioinfo 2005), 22-24 September 2005, Busan, Korea. [*Proceedings*]
 - Kalapanulak S, Tang-amornsuksan N, Meechai A, Cheevadhanarak S, Bhumiratana S (2005) An applied process control concept to gene motif network modeling for predicting the gene expression profiles, The 2005 International Joint Conference of InCoB, AASBi and KSBI (Bioinfo 2005), 22-24 September 2005, Busan, Korea. [*Poster*]
+
+
 
 # **Research Talks**
 
