@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownMemberLayout.astro
-name: Saowalak Kalapanulak, Asst. Prof. Dr.
+name: Saowalak Kalapanulak, Assoc. Prof. Dr.
 image: ~/assets/images/people/saowalak.png
 introduction: Dr. Saowalak Kalapanulak unravels the mysteries of metabolism in both plants and pathogens using powerful tools from systems biology and bioinformatics. Her expertise lies in building intricate network models to understand how organisms function.
 position: Lecturer / Chair of Bioinformatics and Systems Biology Program
@@ -26,7 +26,7 @@ education:
     date: 2000
     icon: 'tabler:school'
 profAct:
-  - title: Assistant Professor 
+  - title: Associate Professor 
     location: In Plant Systems Biology, Bioinformatics and Systems Biology Program, School of Bioresources and Technology, King Mongkut’s University of Technology Thonburi
     date: 2013 – 2018
     icon: 'tabler:briefcase'
