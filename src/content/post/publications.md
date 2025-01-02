@@ -3,7 +3,9 @@ publishDate: 2020-11-16T00:00:00Z
 title: Publication
 ---
 ## 2024
-
+- Saithong T, Chiewchankaset P, Postma J, Thaiprasit J, Kalapanulak S, Khongkhuntian T, Rattanaareekul W, Wojciechowski T, Phoncharoen P, Banterng P, Phatrapornnant T, Ham LH (2024) DIRECTION: a model-aided irrigation tool for cassava plantation. The 14th International Conference of the Asia-Pacific Federation for Information Technology in Agriculture (APFITA 2024), 6-8 November 2024, Tsukuba International Congress Center, Tsukuba, Japan. [*Oral*] 
+- Kalapanulak S, Sriwichai N, Thaiprasit J, Jitareerat P, Saithong T (2024) Genome-wide transcriptome analysis of protein hydrolysate (PH) inducing andrographolide production in Andrographis paniculate. The 14th International Conference of the Asia-Pacific Federation for Information Technology in Agriculture (APFITA 2024), 6-8 November 2024, Tsukuba International Congress Center, Tsukuba, Japan. [*Oral*] 
+- A-piwat A, Thaiprasit J, Kalapanulak S, Saithong T (2024) A simple measure of stem-cutting quality for efficiency enhancement of planting materials in a cassava cultivation. The 14th International Conference of Asia-Pacific Federation for Information Technology in Agriculture (APFITA 2024), 6-8 November 2024, Tsukuba International Congress Center, Tsukuba, Japan. [*Oral*]
 - Nguyen NX, Saithong T, Boonyaritthongchai P, Buanong M, Kalapanulak S, Wongs-Aree C (2024) Methyl salicylate induces endogenous jasmonic acid and salicylic acid in’Nam Dok Mai’mango to maintain postharvest ripening and quality, Journal of Plant Physiology. 303: 154356.
 - Srinak N, Chiewchankaset P, Kalapanulak S, Panichnumsin P, Saithong T (2024) Metabolic cross-feeding interactions modulate the dynamic community structure in microbial fuel cell under variable organic loading wastewaters, PLOS Computational Biology. 20(10): e1012533.
 - Sriwichai N, Sangcharoen R, Saithong T, Simpson D, Goryanin I, Boonapatcharoen N, Kalapanulak S, Panichnumsin P (2024) Optimization of microbial fuel cell performance application to high sulfide industrial wastewater treatment by modulating microbial function, PLoS One. 19(6): e0305673.
