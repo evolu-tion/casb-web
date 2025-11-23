@@ -5,16 +5,25 @@ const id = ANALYTICS?.vendors?.googleAnalytics?.id;
 const partytown = !!ANALYTICS?.vendors?.googleAnalytics?.partytown;
 ---
 
-{ id && id.startsWith('GTM-') ? (
-  <>
-    <script async src={`https://www.googletagmanager.com/gtm.js?id=${String(id)}`} />
-    <noscript>
-      <iframe src={`https://www.googletagmanager.com/ns.html?id=${String(id)}`} height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-  </>
-) : id && id.startsWith('G-') ? (
-  <>
-    <script src={`https://www.googletagmanager.com/gtag/js?id=${String(id)}`} async></script>
-    <script set:html={`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${String(id)}');`}></script>
-  </>
-) : null }
+{
+  id && id.startsWith('GTM-') ? (
+    <>
+      <script async src={`https://www.googletagmanager.com/gtm.js?id=${String(id)}`} />
+      <noscript>
+        <iframe
+          src={`https://www.googletagmanager.com/ns.html?id=${String(id)}`}
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        />
+      </noscript>
+    </>
+  ) : id && id.startsWith('G-') ? (
+    <>
+      <script src={`https://www.googletagmanager.com/gtag/js?id=${String(id)}`} async />
+      <script
+        set:html={`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${String(id)}');`}
+      />
+    </>
+  ) : null
+}

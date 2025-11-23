@@ -58,25 +58,28 @@ const final = merge({}, seoProps, { openGraph: adaptedOpenGraph });
 {(final?.nofollow || seoProps.nofollow) && <meta name="robots" content="nofollow" />}
 
 {/* Open Graph */}
-{(final?.openGraph) && (
-  <>
-    <meta property="og:title" content={final.openGraph?.url ?? final.title ?? seoProps.title ?? ''} />
-    <meta property="og:description" content={final.description ?? seoProps.description ?? ''} />
-    <meta property="og:url" content={final.canonical ?? seoProps.canonical ?? ''} />
-    {final.openGraph?.siteName && <meta property="og:site_name" content={final.openGraph.siteName} />}
-    {final.openGraph?.type && <meta property="og:type" content={final.openGraph.type} />}
-    {final.openGraph?.images && final.openGraph.images.map((img: any) => (
-      img?.url ? <meta property="og:image" content={img.url} /> : null
-    ))}
-  </>
-)}
+{
+  final?.openGraph && (
+    <>
+      <meta property="og:title" content={final.openGraph?.url ?? final.title ?? seoProps.title ?? ''} />
+      <meta property="og:description" content={final.description ?? seoProps.description ?? ''} />
+      <meta property="og:url" content={final.canonical ?? seoProps.canonical ?? ''} />
+      {final.openGraph?.siteName && <meta property="og:site_name" content={final.openGraph.siteName} />}
+      {final.openGraph?.type && <meta property="og:type" content={final.openGraph.type} />}
+      {final.openGraph?.images &&
+        final.openGraph.images.map((img: any) => (img?.url ? <meta property="og:image" content={img.url} /> : null))}
+    </>
+  )
+}
 
 {/* Twitter */}
-{(final?.twitter || seoProps.twitter) && (
-  <>
-    <meta name="twitter:card" content={final.twitter?.cardType ?? seoProps.twitter?.cardType ?? 'summary'} />
-    {final.twitter?.handle ?? seoProps.twitter?.handle ? (
-      <meta name="twitter:creator" content={final.twitter?.handle ?? seoProps.twitter?.handle} />
-    ) : null}
-  </>
-)}
+{
+  (final?.twitter || seoProps.twitter) && (
+    <>
+      <meta name="twitter:card" content={final.twitter?.cardType ?? seoProps.twitter?.cardType ?? 'summary'} />
+      {(final.twitter?.handle ?? seoProps.twitter?.handle) ? (
+        <meta name="twitter:creator" content={final.twitter?.handle ?? seoProps.twitter?.handle} />
+      ) : null}
+    </>
+  )
+}
