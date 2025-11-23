@@ -38,15 +38,15 @@ export default defineConfig({
     sitemap(
       {
         customPages: [
-          'https://bml.kmutt.ac.th/v2/tag/publication' ,
-          'https://bml.kmutt.ac.th/v2/terms' ,
-          'https://bml.kmutt.ac.th/ppi' ,
-          'https://bml.kmutt.ac.th/ppi2' ,
-          'https://bml.kmutt.ac.th/MeRecon' ,
-          'https://bml.kmutt.ac.th/ph-MeRecon' ,
-          'https://bml.kmutt.ac.th/miRNAs' ,
-          'https://bml.kmutt.ac.th/Me-lncRNAs' ,
-          'https://bml.kmutt.ac.th/MeTRN' ,
+          'https://bml.kmutt.ac.th/v2/tag/publication',
+          'https://bml.kmutt.ac.th/v2/terms',
+          'https://bml.kmutt.ac.th/ppi',
+          'https://bml.kmutt.ac.th/ppi2',
+          'https://bml.kmutt.ac.th/MeRecon',
+          'https://bml.kmutt.ac.th/ph-MeRecon',
+          'https://bml.kmutt.ac.th/miRNAs',
+          'https://bml.kmutt.ac.th/Me-lncRNAs',
+          'https://bml.kmutt.ac.th/MeTRN',
           'https://bml.kmutt.ac.th/Plant-DTI'
         ],
       }
