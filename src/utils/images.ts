@@ -1,6 +1,6 @@
 import { getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
-import type { OpenGraph } from '@astrolib/seo';
+import type { MetaDataOpenGraph as OpenGraph, MetaDataImage } from '~/types';
 
 const load = async function () {
   let images: Record<string, () => Promise<unknown>> | undefined = undefined;
@@ -50,7 +50,7 @@ export const findImage = async (
 /** */
 export const adaptOpenGraphImages = async (
   openGraph: OpenGraph = {},
-  astroSite: URL | undefined = new URL('')
+  astroSite: URL | undefined = undefined
 ): Promise<OpenGraph> => {
   if (!openGraph?.images?.length) {
     return openGraph;
@@ -61,7 +61,7 @@ export const adaptOpenGraphImages = async (
   const defaultHeight = 626;
 
   const adaptedImages = await Promise.all(
-    images.map(async (image) => {
+    images.map(async (image: MetaDataImage) => {
       if (image?.url) {
         const resolvedImage = (await findImage(image.url)) as ImageMetadata | undefined;
         if (!resolvedImage) {
@@ -79,8 +79,16 @@ export const adaptOpenGraphImages = async (
 
         if (typeof _image === 'object') {
           const _img = _image as unknown as { src?: string; width?: number; height?: number };
+          let imgUrl = '';
+          if (typeof _img.src === 'string') {
+            try {
+              imgUrl = astroSite instanceof URL ? String(new URL(_img.src, astroSite)) : _img.src;
+            } catch (e) {
+              imgUrl = _img.src;
+            }
+          }
           return {
-            url: typeof _img.src === 'string' ? String(new URL(_img.src, astroSite)) : '',
+            url: imgUrl,
             width: typeof _img.width === 'number' ? _img.width : undefined,
             height: typeof _img.height === 'number' ? _img.height : undefined,
           };
