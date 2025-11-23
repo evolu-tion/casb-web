@@ -1,7 +1,6 @@
 # build output
 dist/
 .output/
-dist.zip
 
 # dependencies
 node_modules/
@@ -23,3 +22,4 @@ pnpm-debug.log*
 pnpm-lock.yaml
 
 .astro
+dist.zip
