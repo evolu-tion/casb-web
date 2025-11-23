@@ -2,6 +2,7 @@
   "name": "casb-web",
   "description": "CASB website is modified AstroWind template using Astro 4.0 and Tailwind CSS.",
   "version": "1.0.0-beta.17",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
