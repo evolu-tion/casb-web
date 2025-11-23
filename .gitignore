@@ -1,6 +1,7 @@
 # build output
 dist/
 .output/
+dist.zip
 
 # dependencies
 node_modules/

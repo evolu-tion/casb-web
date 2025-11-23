@@ -78,10 +78,11 @@ export const adaptOpenGraphImages = async (
         });
 
         if (typeof _image === 'object') {
+          const _img = _image as unknown as { src?: string; width?: number; height?: number };
           return {
-            url: typeof _image.src === 'string' ? String(new URL(_image.src, astroSite)) : 'pepe',
-            width: typeof _image.width === 'number' ? _image.width : undefined,
-            height: typeof _image.height === 'number' ? _image.height : undefined,
+            url: typeof _img.src === 'string' ? String(new URL(_img.src, astroSite)) : '',
+            width: typeof _img.width === 'number' ? _img.width : undefined,
+            height: typeof _img.height === 'number' ? _img.height : undefined,
           };
         }
         return {

@@ -132,7 +132,8 @@ export interface Item {
   location?: string;
   description?: string;
   year?: string;
-  link: string;
+  date?: string;
+  link?: string;
   icon?: string;
   classes?: Record<string, string>;
   callToAction?: CallToAction;

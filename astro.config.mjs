@@ -1,7 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { defineConfig, squooshImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
 
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -93,9 +93,11 @@ export default defineConfig({
     tasks(),
   ],
 
-  image: {
-    service: squooshImageService(),
-  },
+  // Astro v5: the built-in squooshImageService export was removed/changed.
+  // Keep `image` config minimal to avoid build-time import errors. If you
+  // need an image service, replace this with the Astro Image integration
+  // recommended for Astro v5 or a custom service.
+  image: {},
 
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
