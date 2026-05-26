@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-CASB (Center for Agricultural Systems Biology) profile website for KMUTT. Built on the **AstroWind** template, using Astro (v6), Tailwind CSS, MDX, and TypeScript. Deployed at `https://bml.kmutt.ac.th/v2` with a base path of `v2/`.
+CASB (Center for Agricultural Systems Biology) profile website for KMUTT. Built on the **AstroWind** template, using Astro (v6), Tailwind CSS v4, MDX, and TypeScript 6. Deployed at `https://bml.kmutt.ac.th/v2` with a base path of `v2/`.
 
 ## Commands
 
 ```bash
-npm run dev          # Dev server at http://localhost:4321
+npm run dev          # Dev server at http://localhost:4321/v2
 npm run build        # astro check + astro build (type-check before building)
 npm run preview      # Preview production build locally
 npm run lint:eslint  # ESLint
@@ -45,11 +45,11 @@ Navigation links are centralized in **`src/navigation.js`** (header + footer). U
 
 ### Content
 
-**Blog posts** use Astro Content Collections (Astro v6 loader-based API):
+**Blog posts** use Astro v6 Content Collections (loader-based API):
 - Files: `src/content/post/*.md` or `.mdx`
-- Schema config: `src/content.config.ts` (uses `glob` loader + Zod). Required field: `title`. Optional: `publishDate`, `updateDate`, `draft`, `excerpt`, `image`, `category`, `tags`, `author`, `metadata`.
+- Schema config: `src/content.config.ts` (uses `glob` loader + Zod imported directly from `zod`, not `astro:content`). Required field: `title`. Optional: `publishDate`, `updateDate`, `draft`, `excerpt`, `image`, `category`, `tags`, `author`, `metadata`.
 - Date strings must be ISO format (e.g., `2025-11-23T00:00:00Z`).
-- In `src/utils/blog.ts`, use `render(post)` (imported from `astro:content`) — the old `post.render()` and `post.slug` APIs are gone in v6; use `post.id` as the slug.
+- In `src/utils/blog.ts`, use `render(post)` (imported from `astro:content`) and `post.id` as the slug — the old `post.render()` and `post.slug` APIs were removed in Astro v6.
 
 **People pages** are plain Markdown files under `src/pages/people/` (not content collections), rendered by `src/layouts/MarkdownMemberLayout.astro` or `src/layouts/MarkdownLayout.astro`.
 
@@ -69,7 +69,7 @@ src/pages/          — Astro file-based routing; blog uses dynamic [...blog]/ r
 Tailwind is configured entirely through CSS (no `tailwind.config.cjs`):
 - Entry point: `src/assets/styles/tailwind.css` — uses `@import "tailwindcss"`, `@theme` for custom design tokens, `@plugin "@tailwindcss/typography"`, and `@custom-variant dark` for class-based dark mode.
 - Loaded via `@tailwindcss/vite` Vite plugin (not the old `@astrojs/tailwind` integration).
-- **Vite is pinned to `^7.x`** via `overrides` in `package.json`. Do not remove this — `@tailwindcss/vite >=4.3.0` brings Vite 8 (Rolldown) which conflicts with Astro 6's Vite 7.
+- **Both `@tailwindcss/vite` and `tailwindcss` are pinned to `^4.2.4`**, and **Vite is pinned to `^7.x`** via `overrides` in `package.json`. Do not bump these — `@tailwindcss/vite >=4.3.0` bundles Vite 8 (Rolldown) which conflicts with Astro 6's Vite 7.
 
 ### Build-time integrations
 
@@ -80,4 +80,14 @@ Tailwind is configured entirely through CSS (no `tailwind.config.cjs`):
 
 ### Image handling
 
-The `image: {}` config in `astro.config.mjs` is intentionally minimal for Astro v5+ compatibility (the old `squooshImageService` export was removed). Use the `<Image>` component from `src/components/common/Image.astro` for consistent image handling.
+The `image: {}` config in `astro.config.mjs` is intentionally minimal (the old `squooshImageService` was removed in Astro v5+). Use the `<Image>` component from `src/components/common/Image.astro` for consistent image handling. The `unpic` package (v3) provides `transformUrl`/`parseUrl` for external CDN image optimization.
+
+### Dependency constraints
+
+| Package | Pinned version | Reason |
+|---|---|---|
+| `tailwindcss` | `^4.2.4` | v4.3+ brings Vite 8 conflict |
+| `@tailwindcss/vite` | `^4.2.4` | same |
+| `vite` (override) | `^7.x` | Astro 6 requires Vite 7 |
+| `unpic` | `^3.x` | v4 changed `transformUrl`/`parseUrl` API — needs audit before upgrading |
+| `eslint` | `^9.x` | v10 drops `.eslintrc.js` legacy config; upgrading requires migrating to `eslint.config.mjs` flat config |
