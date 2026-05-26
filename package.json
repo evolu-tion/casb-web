@@ -13,43 +13,47 @@
     "lint:eslint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.5",
-    "@astrojs/rss": "4.0.7",
-    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
     "@fontsource-variable/inter": "^5.1.0",
-    "astro": "5.16.0",
+    "astro": "^6.3.7",
     "astro-icon": "^1.1.1",
-    "caniuse-lite": "^1.0.30001660",
-    "limax": "4.1.0",
+    "caniuse-lite": "^1.0.30001793",
+    "limax": "^4.2.3",
     "lodash.merge": "^4.6.2",
-    "typescript": "^5.6.2",
+    "typescript": "^6.0.3",
     "unpic": "^3.18.0"
   },
   "devDependencies": {
-    "@astrojs/mdx": "4.3.12",
-    "@astrojs/partytown": "^2.1.4",
-    "@astrojs/tailwind": "6.0.2",
-    "@iconify-json/flat-color-icons": "^1.2.0",
-    "@iconify-json/tabler": "^1.2.2",
+    "@astrojs/mdx": "^5.0.6",
+    "@astrojs/partytown": "^2.1.7",
+    "@iconify-json/flat-color-icons": "^1.2.3",
+    "@iconify-json/tabler": "^1.2.35",
     "@tailwindcss/typography": "^0.5.15",
+    "@tailwindcss/vite": "^4.2.4",
     "@types/js-yaml": "^4.0.9",
     "@types/lodash.merge": "^4.6.9",
-    "@typescript-eslint/eslint-plugin": "^8.5.0",
-    "@typescript-eslint/parser": "^8.5.0",
-    "astro-compress": "2.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.60.0",
+    "@typescript-eslint/parser": "^8.60.0",
+    "astro-compress": "^2.4.1",
+    "baseline-browser-mapping": "^2.10.32",
     "eslint": "^9.10.0",
-    "eslint-plugin-astro": "^1.2.4",
+    "eslint-plugin-astro": "^1.7.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "js-yaml": "^4.1.0",
     "mdast-util-to-string": "^4.0.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "reading-time": "^1.5.0",
-    "sharp": "0.33.5",
-    "tailwind-merge": "^2.5.2",
-    "tailwindcss": "^3.4.11"
+    "sharp": "^0.34.5",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.2.4"
   },
   "engines": {
     "node": ">=18.14.1"
+  },
+  "overrides": {
+    "vite": "^7.3.2"
   }
 }

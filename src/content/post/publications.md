@@ -3,6 +3,12 @@ publishDate: 2025-11-23T00:00:00Z
 title: Publication
 ---
 
+## 2026
+
+- Hakim MN, Chiewchankaset P, Kalapanulak S, Waeonukul R, Tiangpook S, Saithong T (2026) Dynamic metabolic modeling uncovers systems-level strategies to simultaneously maximize levan yield and substrate efficiency in Bacillus subtilis LY7. 16. PLOS Computational Biology. 22(5): e1014273.
+- Hassan MK, Sun L, Jirakkakul J, Saithong T, Kalapanulak S, Krobthong S, Maiuthed A, Yodying Y, Permana BH, Salaipeth L (2025) Hypovirulence induced by mycovirus colletotrichum gloeosporioides RNA virus 1 strain Ssa-44.1 in Colletotrichum gloeosporioides: Insights from a multi-omics analysis of host-virus interactions, Microbiological Research. 301: 128308.
+- Permana BH, Nookongbut P, Krobthong S, Yingchutrakul Y, Saithong T, Thiravetyan P, Treesubsuntorn C (2025) Using proteomics to predict indoor potted plant and tree plant responses under particulate matter stress. Chemistry and Ecology. 41(5): 610-625.
+
 ## 2025
 
 - Thaiprasit J, Chiewchankaset P, A-piwat I, Sukcharoen A, Kalapanulak S, Pongchaiphol S, Laosiripojana N, Chidthaisong A, Saithong T (2025) CO₂ nanobubbles (CNBs): A potential technology to enhance CO2 capture for carbon farming, The Synthetic Biology and Future Food Networking Forum and IBA Subject Conference 2025, 5-7 November 2025, Ramada Plaza by Wyndham Maenam Riverside, Bangkok, Thailand. [*Poster*]
