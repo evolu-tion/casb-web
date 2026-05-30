@@ -169,6 +169,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/KMUTT-BML' },
   ],
   footNote: `
-    &copy; 2024 Center for Agricultural Systems Biology, King Mongkut's University of Technology Thonburi · All rights reserved.
+    &copy; 2026 Center for Agricultural Systems Biology, King Mongkut's University of Technology Thonburi · All rights reserved.
   `,
 };
